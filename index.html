@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TastyHome — пошаговые рецепты домашней кухни</title>
+<meta name="description" content="Домашние рецепты шаг за шагом: супы, горячее, завтраки, салаты и десерты с точными пропорциями, таймерами и пересчётом порций.">
+<link rel="canonical" href="https://YOUR-DOMAIN/index.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="TastyHome">
+<meta property="og:title" content="TastyHome — пошаговые рецепты домашней кухни">
+<meta property="og:description" content="Домашние рецепты шаг за шагом: супы, горячее, завтраки, салаты и десерты с точными пропорциями, таймерами и пересчётом порций.">
+<meta property="og:url" content="https://YOUR-DOMAIN/index.html">
+<meta property="og:image" content="https://YOUR-DOMAIN/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem('th');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "TastyHome", "url": "https://YOUR-DOMAIN/", "inLanguage": "ru"}</script>
+</head>
+<body>
+<svg class="deco" aria-hidden="true" focusable="false"><defs><pattern id="kp" width="300" height="300" patternUnits="userSpaceOnUse">
+<g transform="translate(40 50) rotate(-20)"><path d="M-6-14Q0-18 6-14L2 22Q0 26-2 22Z M0-14L-5-24M0-14V-26M0-14L5-24M-3-4h4M-2 6h3"/></g>
+<g transform="translate(140 36) rotate(15)"><circle r="14"/><path d="M-7-12L0-8L7-12M0-8V-16"/></g>
+<g transform="translate(240 60) rotate(30)"><path d="M-5-24V6H5Q5-14-5-24Z M-4 6h8v16h-8z"/></g>
+<g transform="translate(80 140) rotate(10)"><path d="M-14 2Q-14-16 0-16Q14-16 14 2Z M-5 2V14Q0 18 5 14V2"/></g>
+<g transform="translate(190 130) rotate(-30)"><ellipse cy="-12" rx="7" ry="10"/><path d="M0-2V24"/></g>
+<g transform="translate(270 170) rotate(8)"><path d="M0 24V6M0 6C-12-4-10-22 0-24C10-22 12-4 0 6M0 6C-5-4-4-20 0-24C4-20 5-4 0 6"/></g>
+<g transform="translate(30 240) rotate(-8)"><path d="M0-16Q-14-6-12 6Q-8 16 0 16Q8 16 12 6Q14-6 0-16Z M0-16V-22M0-14Q-4 0 0 16"/></g>
+<g transform="translate(130 250) rotate(25)"><path d="M0 20V-18M0-4L-8-10M0-4L8-10M0 6L-8 0M0 6L8 0M0-14L-5-18M0-14L5-18"/></g>
+<g transform="translate(225 250) rotate(-12)"><path d="M-14-4H14V14Q14 18 10 18H-10Q-14 18-14 14Z M-18 0h4M14 0h4M-10-8Q0-14 10-8"/></g>
+<g transform="translate(150 190) rotate(40)"><path d="M-6-12Q10-14 8 4Q6 18-8 22Q-4 6-6-12Z M-6-12Q-6-18-2-20"/></g>
+</pattern></defs><rect width="100%" height="100%" fill="url(#kp)"/></svg>
+<header><div class="wrap bar">
+  <a class="brand" href="index.html" aria-label="TastyHome — на главную"><img class="logo" src="img/logo.png" alt="">TastyHome</a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="index.html" aria-current="page">Рецепты</a>
+    <a href="index.html#fav">Избранное <span class="cnt" id="favcnt"></span></a>
+    <a href="about.html">О проекте</a>
+  </nav>
+  <button class="theme" id="theme" type="button">Тёмная тема</button>
+</div></header>
+<main class="wrap">
+<section class="hero"><div class="logo-side"><img class="hero-logo" src="img/logo.png" alt="TastyHome"></div><div class="arc"><h1>TastyHome</h1><p>Секрет домашнего вкуса — готовить с душой</p></div></section>
+<div class="perks"><div class="perk"><img src="img/icons/icon-1.svg" alt="" width="64" height="64"><span>Рецепты по шагам</span></div><div class="perk"><img src="img/icons/icon-2.svg" alt="" width="64" height="64"><span>Температура и время</span></div><div class="perk"><img src="img/icons/icon-3.svg" alt="" width="64" height="64"><span>Пропорции и специи</span></div><div class="perk"><img src="img/icons/icon-4.svg" alt="" width="64" height="64"><span>Следим за временем</span></div><div class="perk"><img src="img/icons/icon-5.svg" alt="" width="64" height="64"><span>Чего не делать</span></div></div>
+<div class="tools"><input id="q" type="search" placeholder="Название или ингредиенты через запятую" aria-label="Поиск рецептов"><div class="chips"><button class="chip" type="button" data-c="Все" aria-pressed="true">Все</button><button class="chip" type="button" data-c="Супы" aria-pressed="false">Супы</button><button class="chip" type="button" data-c="Завтраки" aria-pressed="false">Завтраки</button><button class="chip" type="button" data-c="Горячее" aria-pressed="false">Горячее</button><button class="chip" type="button" data-c="Гарниры" aria-pressed="false">Гарниры</button><button class="chip" type="button" data-c="Салаты" aria-pressed="false">Салаты</button><button class="chip" type="button" data-c="Десерты" aria-pressed="false">Десерты</button><button class="chip" type="button" data-c="Избранное" aria-pressed="false">Избранное</button></div></div>
+<p class="search-note">Например: «картофель, кефир» покажет, что можно приготовить из этих продуктов.</p>
+<h2>Рецепты</h2>
+<div class="grid" id="grid">
+<article class="card" data-id="borsch" data-cat="Супы" data-title="Борщ" data-ing="говядина на кости вода свёкла картофель белокочанная капуста морковь лук репчатый томатная паста уксус 9% растительное масло чеснок лавровый лист соль">
+<a class="thumb" href="recipe/borsch.html" aria-label="Борщ"><span aria-hidden="true">🍲</span><img src="img/borsch.jpg" alt="Борщ" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="borsch" aria-pressed="false" aria-label="Добавить «Борщ» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/borsch.html">Борщ</a></h3><div class="meta">Супы · 120 мин · Средне</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="syrniki" data-cat="Завтраки" data-title="Сырники" data-ing="творог 5–9% яйцо мука в тесто мука для обваливания сахар ванильный сахар соль масло для жарки">
+<a class="thumb" href="recipe/syrniki.html" aria-label="Сырники"><span aria-hidden="true">🥞</span><img src="img/syrniki.jpg" alt="Сырники" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="syrniki" aria-pressed="false" aria-label="Добавить «Сырники» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/syrniki.html">Сырники</a></h3><div class="meta">Завтраки · 35 мин · Легко</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="oladi" data-cat="Завтраки" data-title="Оладьи на кефире" data-ing="кефир яйцо мука сахар сода соль масло для жарки">
+<a class="thumb" href="recipe/oladi.html" aria-label="Оладьи на кефире"><span aria-hidden="true">🥞</span><img src="img/oladi.jpg" alt="Оладьи на кефире" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="oladi" aria-pressed="false" aria-label="Добавить «Оладьи на кефире» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/oladi.html">Оладьи на кефире</a></h3><div class="meta">Завтраки · 30 мин · Легко</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="plov" data-cat="Горячее" data-title="Плов" data-ing="говядина или баранина рис длиннозёрный морковь лук чеснок растительное масло зира сушёный барбарис соль кипяток">
+<a class="thumb" href="recipe/plov.html" aria-label="Плов"><span aria-hidden="true">🍛</span><img src="img/plov.jpg" alt="Плов" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="plov" aria-pressed="false" aria-label="Добавить «Плов» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/plov.html">Плов</a></h3><div class="meta">Горячее · 120 мин · Средне</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="pyure" data-cat="Гарниры" data-title="Картофельное пюре" data-ing="картофель молоко сливочное масло соль мускатный орех">
+<a class="thumb" href="recipe/pyure.html" aria-label="Картофельное пюре"><span aria-hidden="true">🥔</span><img src="img/pyure.jpg" alt="Картофельное пюре" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="pyure" aria-pressed="false" aria-label="Добавить «Картофельное пюре» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/pyure.html">Картофельное пюре</a></h3><div class="meta">Гарниры · 40 мин · Легко</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="kurinyi" data-cat="Супы" data-title="Куриный суп с лапшой" data-ing="куриные бёдра вода картофель морковь лук вермишель или лапша растительное масло лавровый лист перец горошком соль зелень">
+<a class="thumb" href="recipe/kurinyi.html" aria-label="Куриный суп с лапшой"><span aria-hidden="true">🍜</span><img src="img/kurinyi.jpg" alt="Куриный суп с лапшой" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="kurinyi" aria-pressed="false" aria-label="Добавить «Куриный суп с лапшой» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/kurinyi.html">Куриный суп с лапшой</a></h3><div class="meta">Супы · 60 мин · Легко</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="blini" data-cat="Завтраки" data-title="Блины" data-ing="молоко яйцо мука сахар соль растительное масло в тесто масло для смазки сковороды">
+<a class="thumb" href="recipe/blini.html" aria-label="Блины"><span aria-hidden="true">🥞</span><img src="img/blini.jpg" alt="Блины" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="blini" aria-pressed="false" aria-label="Добавить «Блины» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/blini.html">Блины</a></h3><div class="meta">Завтраки · 50 мин · Легко</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="draniki" data-cat="Завтраки" data-title="Драники" data-ing="картофель лук яйцо мука соль чёрный перец масло для жарки">
+<a class="thumb" href="recipe/draniki.html" aria-label="Драники"><span aria-hidden="true">🥔</span><img src="img/draniki.jpg" alt="Драники" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="draniki" aria-pressed="false" aria-label="Добавить «Драники» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/draniki.html">Драники</a></h3><div class="meta">Завтраки · 40 мин · Легко</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="kotlety" data-cat="Горячее" data-title="Куриные котлеты" data-ing="куриный фарш лук яйцо белый хлеб без корки молоко сметана соль чёрный перец панировочные сухари масло для жарки">
+<a class="thumb" href="recipe/kotlety.html" aria-label="Куриные котлеты"><span aria-hidden="true">🍗</span><img src="img/kotlety.jpg" alt="Куриные котлеты" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="kotlety" aria-pressed="false" aria-label="Добавить «Куриные котлеты» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/kotlety.html">Куриные котлеты</a></h3><div class="meta">Горячее · 45 мин · Легко</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="grechka" data-cat="Гарниры" data-title="Гречка с грибами" data-ing="гречка шампиньоны лук растительное масло сливочное масло кипяток соль чёрный перец">
+<a class="thumb" href="recipe/grechka.html" aria-label="Гречка с грибами"><span aria-hidden="true">🍄</span><img src="img/grechka.jpg" alt="Гречка с грибами" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="grechka" aria-pressed="false" aria-label="Добавить «Гречка с грибами» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/grechka.html">Гречка с грибами</a></h3><div class="meta">Гарниры · 35 мин · Легко</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="olivie" data-cat="Салаты" data-title="Салат Оливье" data-ing="картофель морковь яйцо варёная колбаса солёные огурцы зелёный горошек майонез соль чёрный перец">
+<a class="thumb" href="recipe/olivie.html" aria-label="Салат Оливье"><span aria-hidden="true">🥗</span><img src="img/olivie.jpg" alt="Салат Оливье" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="olivie" aria-pressed="false" aria-label="Добавить «Салат Оливье» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/olivie.html">Салат Оливье</a></h3><div class="meta">Салаты · 90 мин · Легко</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="sharlotka" data-cat="Десерты" data-title="Шарлотка" data-ing="кисло-сладкие яблоки яйцо сахар мука разрыхлитель ванильный сахар корица масло для формы сахарная пудра">
+<a class="thumb" href="recipe/sharlotka.html" aria-label="Шарлотка"><span aria-hidden="true">🥧</span><img src="img/sharlotka.jpg" alt="Шарлотка" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="sharlotka" aria-pressed="false" aria-label="Добавить «Шарлотка» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/sharlotka.html">Шарлотка</a></h3><div class="meta">Десерты · 70 мин · Легко</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="makarony" data-cat="Горячее" data-title="Макароны по-флотски" data-ing="макароны говяжий фарш лук растительное масло сливочное масло соль для воды соль в фарш чёрный перец вода для варки">
+<a class="thumb" href="recipe/makarony.html" aria-label="Макароны по-флотски"><span aria-hidden="true">🍝</span><img src="img/makarony.jpg" alt="Макароны по-флотски" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="makarony" aria-pressed="false" aria-label="Добавить «Макароны по-флотски» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/makarony.html">Макароны по-флотски</a></h3><div class="meta">Горячее · 35 мин · Легко</div><span class="match" hidden></span></div></article>
+<article class="card" data-id="okroshka" data-cat="Супы" data-title="Окрошка на кефире" data-ing="кефир газированная минеральная вода картофель яйцо огурец редис варёная колбаса укроп зелёный лук соль">
+<a class="thumb" href="recipe/okroshka.html" aria-label="Окрошка на кефире"><span aria-hidden="true">🥣</span><img src="img/okroshka.jpg" alt="Окрошка на кефире" loading="lazy" width="720" height="480"></a>
+<button class="fav" type="button" data-id="okroshka" aria-pressed="false" aria-label="Добавить «Окрошка на кефире» в избранное"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"/></svg></button>
+<div class="in"><h3><a href="recipe/okroshka.html">Окрошка на кефире</a></h3><div class="meta">Супы · 40 мин · Легко</div><span class="match" hidden></span></div></article>
+</div>
+<p class="empty" id="empty" hidden></p>
+</main>
+<footer><div class="wrap">TastyHome — секрет домашнего вкуса. <a href="about.html" style="color:inherit">О проекте и контакты</a></div></footer>
+<div class="timers" id="timers" aria-live="polite"></div>
+<script src="js/app.js" defer></script>
+</body>
+</html>
